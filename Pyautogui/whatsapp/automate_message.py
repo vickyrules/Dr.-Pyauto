@@ -24,7 +24,7 @@ contacts = ["name"]
 message = "hey Bro"
 
 #how many times you want to send
-send_cnt = 10
+sendCnt = 10
 
 # method to find the search bar location
 def click_search_name(name):
@@ -52,8 +52,8 @@ for name in contacts:
     except:
         print("Unable to locate search bar or name")
     try:
-        for i in range(100):
+        for send in range(sendCnt):
             click_send_message(str(i)+". "+message)
     except:
         print("Unable to locate message bar")
-
+    
